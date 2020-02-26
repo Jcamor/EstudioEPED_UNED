@@ -44,7 +44,9 @@ public class Principal {
 		}
 
 		infoVehiculo(micoche);
+		System.out.println();
 		infoVehiculo(mimoto);
+		System.out.println();
 		infoVehiculo(miautobus);
 		
 	}
