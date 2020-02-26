@@ -1,5 +1,5 @@
 package es.uned.lsi.eped.vehiculos;
-
+// Esto es una prueba de Git
 public class Autobus extends Vehiculo {
 
 	private int linea;
