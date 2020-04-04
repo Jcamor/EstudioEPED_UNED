@@ -64,11 +64,13 @@ public class PruebaListas {
 		imprimirLista(miLista);
 		System.out.println("El tamaño de la lista es: " +miLista.size);
 		
+		
 		//miLista.clear();
 		
 		miLista.insert(1, 500);
 		imprimirLista(miLista);
 		miLista.set(1,450);
+		miLista.remove(1);
 		
 		System.out.println();
 		System.out.println("Imprimir Lista ordenada");
