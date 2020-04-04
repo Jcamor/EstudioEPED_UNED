@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  * @author jcamor
- *
+ *Pruebas de Listas para EPED. Ordenacion de menor a mayor y recorrido por la lista sin Iteradores
  */
 public class PruebaListas {
 	private static Scanner entrada; // la crea aquí para poder cerrarla cuando acabe
@@ -71,7 +71,7 @@ public class PruebaListas {
 		imprimirLista(miLista);
 		miLista.set(1,450);
 		miLista.remove(1);
-		
+
 		System.out.println();
 		System.out.println("Imprimir Lista ordenada");
 		

@@ -21,4 +21,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 src/es/uned/lsi/eped/DataStructures/Pruebas.java
+=======
+/bin/
+>>>>>>> f12ad03f74920ffec8cd497f813625365a315127
