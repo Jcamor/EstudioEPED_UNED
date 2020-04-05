@@ -11,17 +11,63 @@ import java.util.Scanner;
  * @author jcamor
  *Pruebas de Listas para EPED. Ordenacion de menor a mayor y recorrido por la lista sin Iteradores
  */
-public class PruebaListas {
+
+public class PruebaEPED {
 	private static Scanner entrada; // la crea aquí para poder cerrarla cuando acabe
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		PruebaListas();
+		//PruListas();
+		//PruPilas();
+		PruColas();
+	}
+	public static void PruColas(){
+		Queue<Integer> miCola = new Queue<Integer>();
+		miCola.enqueue(1);
+		miCola.enqueue(2);
+		miCola.enqueue(3);
+		miCola.enqueue(4);
+		miCola.enqueue(5);
+		miCola.enqueue(6);
+
+		System.out.println(miCola.size);
+
+		System.out.println("Recorrido mediante iterador:");
+		IteratorIF<Integer> iteratorCola = miCola.iterator();
+		while(iteratorCola.hasNext()){
+			System.out.print(iteratorCola.getNext()+" ");
+		}
+		System.out.println();
+		while (!miCola.isEmpty()){
+			System.out.println(miCola.getFirst());
+			miCola.dequeue();
+		}
+
 	}
 
-	public static void PruebaListas() {
+	public static void PruPilas() {
+		Stack<Integer> miPila = new Stack<Integer>();
+		miPila.push(1);
+		miPila.push(2);
+		miPila.push(3);
+		miPila.push(4);
+		miPila.push(5);
+		
+		IteratorIF<Integer> iteratorPila = miPila.iterator();
+		while(iteratorPila.hasNext()){
+			System.out.print(iteratorPila.getNext()+" ");
+		}
+		System.out.println();
+
+		while (!miPila.isEmpty()){
+			System.out.println(miPila.getTop());
+			miPila.pop();
+		}
+	}
+
+	public static void PruListas() {
 		List<Integer> miLista = new List<Integer>();
 		miLista.insert(1, 56);
 		miLista.insert(2, 80);
